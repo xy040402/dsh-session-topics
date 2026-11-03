@@ -251,9 +251,15 @@ window.__ModuleLoader__.load({
         const groups = {};
         for (const [key, list] of Object.entries(asObject(parsed.groupsByWorkspace))) {
           if (!Array.isArray(list)) continue;
-          const clean = list
-            .filter((item) => item && typeof item.id === 'string' && typeof item.name === 'string')
-            .map((item) => ({ id: item.id, name: item.name }));
+          const clean = [];
+          for (const item of list) {
+            if (!item || typeof item.id !== 'string' || typeof item.name !== 'string') continue;
+            const group = { id: item.id, name: item.name };
+            // Nesting lives in `parentId`: dropping it here flattened every
+            // subgroup on the next page load.
+            if (typeof item.parentId === 'string' && item.parentId.length > 0) group.parentId = item.parentId;
+            clean.push(group);
+          }
           if (clean.length > 0) groups[key] = clean;
         }
         return {

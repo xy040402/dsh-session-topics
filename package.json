@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-topics-tree",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "description": "会话话题分组：把 DSH 左侧浏览区换成「工作区 → 话题分组（可多级）→ 会话」，支持拖拽归组、分组嵌套与折叠。",
   "keywords": [
