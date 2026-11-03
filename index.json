@@ -69,6 +69,18 @@
       },
       "versions": [
         {
+          "version": "0.3.1",
+          "publishTimestamp": 1793705098,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/xy040402/dsh-session-topics",
+            "commit": "4091f31ba0604559b8912bcad6f45436b901ec1e"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5"
+          }
+        },
+        {
           "version": "0.3.0",
           "publishTimestamp": 1793687442,
           "source": {
