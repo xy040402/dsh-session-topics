@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Sidebar & Session Plugins",
+    "zh": "侧栏与会话插件"
+  },
+  "description": {
+    "en": "Small, focused DSH web plugins for the sidebar and session browsing.",
+    "zh": "一些专注 DSH 侧栏与会话浏览的小插件。"
+  },
+  "metadata": {
+    "categories": {
+      "sessions": {
+        "title": {
+          "en": "Sessions",
+          "zh": "会话管理"
+        }
+      }
+    },
+    "labels": {
+      "sidebar": {
+        "title": {
+          "en": "Sidebar",
+          "zh": "侧边栏"
+        }
+      },
+      "topics": {
+        "title": {
+          "en": "Topics",
+          "zh": "话题分组"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-session-topics-tree",
+      "title": {
+        "en": "Session Topics Tree",
+        "zh": "会话话题分组"
+      },
+      "description": {
+        "en": "Replaces the sidebar browsing region with Workspace → topic group (nestable) → Session, with drag-to-group and nested collapsible groups.",
+        "zh": "把左侧浏览区换成「工作区 → 话题分组（可多级嵌套）→ 会话」，支持拖拽归组与折叠。"
+      },
+      "icon": "https://raw.githubusercontent.com/xy040402/dsh-session-topics/main/icon.svg",
+      "author": "xy040402",
+      "homepage": "https://github.com/xy040402/dsh-session-topics",
+      "repository": {
+        "url": "https://github.com/xy040402/dsh-session-topics"
+      },
+      "metadata": {
+        "category": "sessions",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "sidebar",
+          "sessions",
+          "topics",
+          "session-tree"
+        ],
+        "labels": [
+          "sidebar",
+          "topics"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1793687442,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/xy040402/dsh-session-topics",
+            "commit": "5a30097b3b0b1f623730283ff0d6b57e8a8dae1f"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}
