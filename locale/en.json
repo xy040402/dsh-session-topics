@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Topics Tree",
+    "description": "Replaces the sidebar browsing region with Workspace to topic group to Session nesting, so sessions in one workspace can be gathered into collapsible topic groups."
+  }
+}

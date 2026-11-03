@@ -1,0 +1,3 @@
+- insert:
+    - id: session-topics-tree
+      name: 'dsh-session-topics-tree'
